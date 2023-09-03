@@ -1,5 +1,5 @@
 "use client";
-import { EXAMPLE_DATA, exampleActions } from "@/datastore";
+import { EXAMPLE_DATA, decrement, } from "@/datastore";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -10,7 +10,7 @@ const Page = () => {
   return (
     <div
       onClick={() => {
-        dispatch(exampleActions.decrement());
+        dispatch(decrement());
       }}
     >
       signup page{exampleData}
